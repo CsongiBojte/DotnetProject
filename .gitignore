@@ -260,4 +260,7 @@ paket-files/
 __pycache__/
 *.pyc
 
-node_modules/
+node_modules/ 
+npm-debug.log
+
+DotnetProject/obj/Debug/net9.0/
