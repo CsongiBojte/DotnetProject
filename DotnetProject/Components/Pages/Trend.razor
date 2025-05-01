@@ -30,6 +30,20 @@
     <h4>📊 Várható utolsó bejutási átlag 2025-ben: <b>@($"{predictionValue:F2}")</b></h4>
 }
 
+@if (trendPoints.Any())
+{
+    <h5 class="mt-4">📈 Előző évek utolsó bejutási átlagai</h5>
+    <RadzenChart Style="height: 400px;">
+        <RadzenLineSeries 
+            Data="@trendPoints" 
+            CategoryProperty="YearString" 
+            ValueProperty="LastMadm" 
+            Title="Utolsó bejutási átlag" />
+        <RadzenCategoryAxis />
+        <RadzenValueAxis Min="0" Max="10" Step="1" />
+    </RadzenChart>
+}
+
 @code {
     private List<string> availableCounties = new();
     private List<string> availableSchools = new();
@@ -139,6 +153,7 @@
                 {
                     predictionValue = value.GetDouble();
                 }
+                await LoadTrend();
             }
             else
             {
@@ -149,8 +164,6 @@
         {
             Console.WriteLine("❌ Error calling prediction API: " + ex.Message);
         }
-        
-        await LoadTrend();
     }
     
     private async Task LoadTrend()
@@ -178,6 +191,23 @@
                 });
             }
         }
+        
+        if (predictionValue.HasValue)
+        {
+            trendPoints.Add(new TrendPoint
+            {
+                Year = DateTime.Now.Year,
+                LastMadm = predictionValue.Value
+            });
+        }
+        
+        Console.WriteLine("📈 TrendPoints count: " + trendPoints.Count);
+        foreach (var tp in trendPoints)
+        {
+            Console.WriteLine($" - {tp.Year}: {tp.LastMadm}");
+        }
+        
+        StateHasChanged();
     }
 
 }
