@@ -1,0 +1,24 @@
+@page "/viz"
+@inject CsvReaderService CsvService
+
+@using DotnetProject.Services
+
+<h3>Top 10 szakátlag (Bejutási átlag szerint)</h3>
+
+<RadzenChart Style="height: 500px;">
+    <RadzenColumnSeries Data="@specializationData"
+                        CategoryProperty="Specialization"
+                        ValueProperty="Average"
+                        Title="Bejutási átlag" />
+    <RadzenCategoryAxis/>
+    <RadzenValueAxis />
+</RadzenChart>
+
+@code {
+    private List<SpecializationStats> specializationData = new();
+
+    protected override void OnInitialized()
+    {
+        specializationData = CsvService.GetAverageBySpecialization(2024);
+    }
+}

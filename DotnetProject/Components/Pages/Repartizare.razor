@@ -1,0 +1,56 @@
+@page "/repartizare"
+@inject CsvReaderService CsvService
+
+@using DotnetProject.Services
+
+<h3>Repartizare @selectedYear</h3>
+
+<RadzenDropDown TValue="int" Data="@availableYears"
+                @bind-Value="@selectedYear"
+                Change="@OnYearChange"
+                Style="width: 200px; margin-bottom: 20px;" />
+
+
+<RadzenDataGrid Data="@records" TItem="RepartizareModel" PageSize="10"
+                AllowPaging="true" AllowSorting="true" AllowFiltering="true"
+                ShowPagingSummary="true">
+    <Columns>
+        <RadzenDataGridColumn TItem="RepartizareModel" Property="County" Title="Megye" />
+        <RadzenDataGridColumn TItem="RepartizareModel" Property="AdmissionAverage" Title="Bejutási átlag" />
+        <RadzenDataGridColumn TItem="RepartizareModel" Title="Iskola">
+            <Template Context="data">
+                @((MarkupString)data.HighSchoolHtml)
+            </Template>
+        </RadzenDataGridColumn>
+        <RadzenDataGridColumn TItem="RepartizareModel" Title="Szak">
+            <Template Context="data">
+                @((MarkupString)data.SpecializationHtml)
+            </Template>
+        </RadzenDataGridColumn>
+    </Columns>
+</RadzenDataGrid>
+
+@code {
+    private List<RepartizareModel> records = new();
+    private List<int> availableYears = new() { 2020,2021, 2022, 2023, 2024 };
+    private int selectedYear = 2024;
+
+    protected override void OnInitialized()
+    {
+        LoadDataForYear(selectedYear);
+    }
+
+    private void OnYearChange(object value)
+    {
+        if (value is int year)
+        {
+            selectedYear = year;
+            LoadDataForYear(year);
+        }
+    }
+
+    private void LoadDataForYear(int year)
+    {
+        records = CsvService.LoadByYear(year);
+    }
+}
