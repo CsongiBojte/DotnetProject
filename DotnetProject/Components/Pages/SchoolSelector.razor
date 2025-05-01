@@ -1,0 +1,87 @@
+@page "/SchoolSelector"
+@using DotnetProject.Models
+@using DotnetProject.Services
+@inject AdmissionService AdmissionService
+
+<h3 class="text-xl font-bold mb-4">Válassz megyét, iskolát, szakot</h3>
+
+<select @onchange="OnCountyChanged" class="border p-2 rounded mb-2">
+    <option disabled selected>Válassz megyét</option>
+    @foreach (var county in Counties)
+    {
+        <option value="@county">@county</option>
+    }
+</select>
+
+@if (SelectedCounty != null)
+{
+    <select @onchange="OnSchoolChanged" class="border p-2 rounded mb-2">
+        <option disabled selected>Válassz iskolát</option>
+        @foreach (var school in Schools)
+        {
+            <option value="@school">@school</option>
+        }
+    </select>
+}
+
+@if (SelectedSchool != null)
+{
+    <select @bind="SelectedSpecialization" class="border p-2 rounded mb-4">
+        <option disabled selected>Válassz szakot</option>
+        @foreach (var specialization in Specializations)
+        {
+            <option value="@specialization">@((MarkupString)specialization)</option>
+        }
+    </select>
+}
+
+@if (SelectedSpecialization != null)
+{
+    <p><b>Kiválasztva:</b> @SelectedCounty → @SelectedSchool → @((MarkupString)SelectedSpecialization)</p>
+}
+
+@code {
+    private List<AdmissionRecord> AllRecords = new();
+    private List<string> Counties = new();
+    private List<string> Schools = new();
+    private List<string> Specializations = new();
+
+    private string SelectedCounty;
+    private string SelectedSchool;
+    private string SelectedSpecialization;
+
+    protected override async Task OnInitializedAsync()
+    {
+        AllRecords = await AdmissionService.LoadAllCsvAsync();
+        Counties = AllRecords.Select(r => r.County).Distinct().OrderBy(c => c).ToList();
+    }
+
+    private void OnCountyChanged(ChangeEventArgs e)
+    {
+        SelectedCounty = e.Value.ToString();
+        Schools = AllRecords
+            .Where(r => r.County == SelectedCounty)
+            .Select(r => r.SchoolName)
+            .Distinct()
+            .OrderBy(s => s)
+            .ToList();
+
+        SelectedSchool = null;
+        Specializations.Clear();
+        StateHasChanged();
+    }
+
+    private void OnSchoolChanged(ChangeEventArgs e)
+    {
+        SelectedSchool = e.Value.ToString();
+        Specializations = AllRecords
+            .Where(r => r.County == SelectedCounty && r.SchoolName == SelectedSchool)
+            .Select(r => r.SpecializationHtml)
+            .Distinct()
+            .OrderBy(s => s)
+            .ToList();
+
+        SelectedSpecialization = null;
+        StateHasChanged();
+    }
+}

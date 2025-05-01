@@ -11,7 +11,7 @@ builder.Services.AddRazorComponents()
 builder.Services.AddRadzenComponents();
 builder.Services.AddSingleton<CsvReaderService>();
 builder.Services.AddSingleton<HighSchoolResultsService>();
-
+builder.Services.AddSingleton<AdmissionService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
