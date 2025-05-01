@@ -29,7 +29,7 @@ public class AdmissionService
             using var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture)
             {
                 Delimiter = ",",
-                HasHeaderRecord = true,
+                HasHeaderRecord = true, 
                 HeaderValidated = null, // ne dobjon hibát hiányzó fejlécre
                 MissingFieldFound = null
             });
