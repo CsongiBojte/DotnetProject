@@ -2,23 +2,32 @@
 @using DotnetProject.Models
 @using DotnetProject.Services
 @inject CsvReaderService CsvService
+@inject HttpClient Http
 
-<h3>Szak trend megye / iskola / szak alapján</h3>
+<h3>Utolsó bejutási átlag predikciója szakonként (megye → iskola → szak)</h3>
 
 <div class="flex flex-col gap-3 mb-4">
-    <RadzenDropDown @bind-Value="@selectedCounty" Data="@availableCounties" Placeholder="Megye kiválasztása" Style="width: 300px;" />
-    <RadzenDropDown @bind-Value="@selectedSchool" Data="@availableSchools" Placeholder="Iskola kiválasztása" Style="width: 300px;" />
-    <RadzenDropDown @bind-Value="@selectedSpec" Data="@availableSpecs" Placeholder="Szak kiválasztása" Style="width: 300px;" />
-    <RadzenButton Text="Trend megjelenítése" Click="@LoadTrend" Style="width: 300px;" Icon="trending_up" />
+    <RadzenDropDown @bind-Value="@selectedCounty" Data="@availableCounties" 
+                    Placeholder="Megye kiválasztása" Style="width: 300px;" 
+                    Change="@OnCountyChanged" />
+    
+    <RadzenDropDown @bind-Value="@selectedSchool" Data="@filteredSchools" 
+                    Placeholder="Iskola kiválasztása" Style="width: 300px;" 
+                    Change="@OnSchoolChanged" />
+
+    <RadzenDropDown @bind-Value="@selectedSpec" Data="@filteredSpecs" 
+                    Placeholder="Szak kiválasztása" Style="width: 300px;" />
+
+    @if (!string.IsNullOrEmpty(selectedSpec))
+    {
+        <RadzenButton Text="2025-ös predikció" Click="@(() => Predict())" 
+                      Style="width: 300px;" Icon="trending_up" />
+    }
 </div>
 
-@if (trendData.Any())
+@if (predictionValue != null)
 {
-    <RadzenChart Style="height: 500px;">
-        <RadzenLineSeries Data="@trendData" CategoryProperty="Year" ValueProperty="Average" Title="Bejutási átlag" />
-        <RadzenCategoryAxis />
-        <RadzenValueAxis />
-    </RadzenChart>
+    <h4>📊 Várható utolsó bejutási átlag 2025-ben: <b>@($"{predictionValue:F2}")</b></h4>
 }
 
 @code {
@@ -26,31 +35,149 @@
     private List<string> availableSchools = new();
     private List<string> availableSpecs = new();
 
+    private List<string> filteredSchools = new();
+    private List<string> filteredSpecs = new();
+    
+    private List<TrendPoint> trendPoints = new();
+
     private string selectedCounty;
     private string selectedSchool;
     private string selectedSpec;
 
-    private List<TrendPoint> trendData = new();
+    private double? predictionValue = null;
+
+    private List<RepartizareModel> allData = new();
 
     protected override void OnInitialized()
     {
-        var allData = new List<RepartizareModel>();
+        allData = CsvService.LoadByYear(2024); // Use 2024 to get known values
 
-        foreach (var y in new[] { 2021, 2022, 2023, 2024 })
-            allData.AddRange(CsvService.LoadByYear(y));
+        availableCounties = allData
+            .Select(r => r.County)
+            .Where(c => !string.IsNullOrWhiteSpace(c))
+            .Distinct()
+            .OrderBy(c => c)
+            .ToList();
 
-        availableCounties = allData.Select(r => r.County).Where(c => !string.IsNullOrWhiteSpace(c)).Distinct().OrderBy(c => c).ToList();
-        availableSchools = allData.Select(r => r.CleanedSchoolName).Where(s => !string.IsNullOrWhiteSpace(s)).Distinct().OrderBy(s => s).ToList();
-        availableSpecs = allData.Select(r => r.CleanedSpecialization).Where(s => !string.IsNullOrWhiteSpace(s)).Distinct().OrderBy(s => s).ToList();
+        availableSchools = allData
+            .Select(r => r.CleanedSchoolName)
+            .Where(s => !string.IsNullOrWhiteSpace(s))
+            .Distinct()
+            .OrderBy(s => s)
+            .ToList();
+
+        availableSpecs = allData
+            .Select(r => r.CleanedSpecialization)
+            .Where(s => !string.IsNullOrWhiteSpace(s))
+            .Distinct()
+            .OrderBy(s => s)
+            .ToList();
     }
 
-    private void LoadTrend()
+    private void OnCountyChanged(object value)
     {
-        if (!string.IsNullOrEmpty(selectedCounty) &&
-            !string.IsNullOrEmpty(selectedSchool) &&
-            !string.IsNullOrEmpty(selectedSpec))
+        selectedSchool = null;
+        selectedSpec = null;
+        predictionValue = null;
+
+        filteredSchools = allData
+            .Where(r => r.County == (string)value)
+            .Select(r => r.CleanedSchoolName)
+            .Where(n => !string.IsNullOrWhiteSpace(n))
+            .Distinct()
+            .OrderBy(n => n)
+            .ToList();
+    }
+
+    private void OnSchoolChanged(object value)
+    {
+        selectedSpec = null;
+        predictionValue = null;
+
+        filteredSpecs = allData
+            .Where(r => r.CleanedSchoolName == (string)value)
+            .Select(r => r.CleanedSpecialization)
+            .Where(n => !string.IsNullOrWhiteSpace(n))
+            .Distinct()
+            .OrderBy(n => n)
+            .ToList();
+    }
+
+    private async Task Predict()
+    {
+        predictionValue = null;
+        var currentYear = DateTime.Now.Year;
+
+        var match = allData.FirstOrDefault(r =>
+            r.CleanedSchoolName == selectedSchool &&
+            r.CleanedSpecialization == selectedSpec);
+
+        if (match == null)
         {
-            trendData = CsvService.GetTrendFor(selectedCounty, selectedSchool, selectedSpec);
+            Console.WriteLine("❌ Iskola és szak páros nem található.");
+            return;
+        }
+
+        var requestPayload = new
+        {
+            year = currentYear,
+            h = match.HighSchoolHtml,
+            sp = match.SpecializationHtml
+        };
+
+        try
+        {
+            var response = await Http.PostAsJsonAsync("http://localhost:5000/predict", requestPayload);
+
+            var responseText = await response.Content.ReadAsStringAsync();
+            Console.WriteLine("🔁 Raw response: " + responseText);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var json = System.Text.Json.JsonDocument.Parse(responseText);
+                if (json.RootElement.TryGetProperty("predicted_madm", out var value))
+                {
+                    predictionValue = value.GetDouble();
+                }
+            }
+            else
+            {
+                Console.WriteLine($"❌ Request failed: {response.StatusCode}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("❌ Error calling prediction API: " + ex.Message);
+        }
+        
+        await LoadTrend();
+    }
+    
+    private async Task LoadTrend()
+    {
+        trendPoints.Clear();
+
+        var currentYear = DateTime.Now.Year;
+
+        for (int year = 2020; year < currentYear; year++)
+        {
+            var yearlyData = CsvService.LoadByYear(year);
+
+            var filtered = yearlyData
+                .Where(r => r.CleanedSchoolName == selectedSchool && r.CleanedSpecialization == selectedSpec)
+                .Where(r => double.TryParse(r.AdmissionAverage, out _))
+                .Select(r => double.Parse(r.AdmissionAverage))
+                .ToList();
+
+            if (filtered.Any())
+            {
+                trendPoints.Add(new TrendPoint
+                {
+                    Year = year,
+                    LastMadm = filtered.Min() // always the lowest admitted
+                });
+            }
         }
     }
+
 }

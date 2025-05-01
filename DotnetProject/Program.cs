@@ -9,9 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 builder.Services.AddRadzenComponents();
+builder.Services.AddHttpClient();
 builder.Services.AddSingleton<CsvReaderService>();
 builder.Services.AddSingleton<HighSchoolResultsService>();
-builder.Services.AddSingleton<AdmissionService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
