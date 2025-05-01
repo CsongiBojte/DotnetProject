@@ -13,16 +13,17 @@
 
 <RadzenDataGrid Data="@records" TItem="RepartizareModel" PageSize="10"
                 AllowPaging="true" AllowSorting="true" AllowFiltering="true"
-                ShowPagingSummary="true">
+                ShowPagingSummary="true" Groupable="true"
+                ShowGroups="true">
     <Columns>
-        <RadzenDataGridColumn TItem="RepartizareModel" Property="County" Title="Megye" />
+        <RadzenDataGridColumn TItem="RepartizareModel" Property="County" Groupable="true" Title="Megye" />
         <RadzenDataGridColumn TItem="RepartizareModel" Property="AdmissionAverage" Title="Bejutási átlag" />
-        <RadzenDataGridColumn TItem="RepartizareModel" Title="Iskola">
+        <RadzenDataGridColumn TItem="RepartizareModel" Title="Iskola" Groupable="true">
             <Template Context="data">
                 @((MarkupString)data.HighSchoolHtml)
             </Template>
         </RadzenDataGridColumn>
-        <RadzenDataGridColumn TItem="RepartizareModel" Title="Szak">
+        <RadzenDataGridColumn TItem="RepartizareModel" Title="Szak" Groupable="true">
             <Template Context="data">
                 @((MarkupString)data.SpecializationHtml)
             </Template>

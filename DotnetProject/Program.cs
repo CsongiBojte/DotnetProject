@@ -10,6 +10,7 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 builder.Services.AddRadzenComponents();
 builder.Services.AddSingleton<CsvReaderService>();
+builder.Services.AddSingleton<HighSchoolResultsService>();
 
 var app = builder.Build();
 

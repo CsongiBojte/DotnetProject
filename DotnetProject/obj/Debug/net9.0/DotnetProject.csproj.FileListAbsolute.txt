@@ -165,3 +165,14 @@
 /Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/bin/Debug/net9.0/CsvHelper.dll
 /Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/eh31q7ec05-hsrg4fwyds.gz
 /Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/ptp6ugpx8b-arw55u5ic1.gz
+/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/DotnetProject.sourcelink.json
+/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/kp1wnb6r3m-8groq15oom.gz
+/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/e4vxai9ybg-2fotow9udw.gz
+/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/hgatu79zrx-uqjf79c1ix.gz
+/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/5z2qz39dmf-jh0z2rhz3b.gz
+/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/ztj40flr6g-te1ovsis71.gz
+/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/dmf08xrdwd-3eczp3myv2.gz
+/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/6lg2f1ffx6-i80wl6ojsb.gz
+/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/mjpbnwv5xd-0j0nbys54q.gz
+/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/091efdcg8u-055nkkiodn.gz
+/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/uc5sfdorsu-ihnef5im46.gz

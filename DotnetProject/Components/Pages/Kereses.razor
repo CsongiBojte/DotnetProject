@@ -1,0 +1,39 @@
+@page "/kereses"
+@using DotnetProject.Models
+@using DotnetProject.Services
+@inject HighSchoolResultsService ResultsService
+
+<h3>Keresés kód alapján</h3>
+
+<RadzenTextBox @bind-Value="searchCode" Placeholder="Tanulói kód..." Style="width: 300px;" />
+<RadzenButton Text="Keresés" Click="@Search" Icon="search" Style="margin-left: 10px;" />
+
+@if (result != null)
+{
+    <RadzenCard Style="margin-top: 20px;">
+        <p><b>Kód:</b> @result.Code</p>
+        <p><b>Iskola:</b> @result.FullSchoolName</p>
+        <p><b>Megye:</b> @result.County</p>
+        <p><b>Szak:</b> @result.Specialization</p>
+        <p><b>Átlag:</b> @result.Average</p>
+        <p><b>Román jegy:</b> @result.RomanianGradeInitial</p>
+        <p><b>Kötelező tantárgy jegy:</b> @result.MandatoryGradeInitial</p>
+        <p><b>Választott tantárgy jegy:</b> @result.ChosenGradeInitial</p>
+    </RadzenCard>
+}
+else if (searched)
+{
+    <RadzenAlert Severity="AlertSeverity.Warning" Style="margin-top: 20px;">Nem található ilyen kód.</RadzenAlert>
+}
+
+@code {
+    private string searchCode;
+    private StudentResult result;
+    private bool searched = false;
+
+    private void Search()
+    {
+        searched = true;
+        result = ResultsService.SearchByCode(searchCode?.Trim());
+    }
+}

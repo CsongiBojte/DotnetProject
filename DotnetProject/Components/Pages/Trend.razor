@@ -1,0 +1,56 @@
+@page "/trend"
+@using DotnetProject.Models
+@using DotnetProject.Services
+@inject CsvReaderService CsvService
+
+<h3>Szak trend megye / iskola / szak alapján</h3>
+
+<div class="flex flex-col gap-3 mb-4">
+    <RadzenDropDown @bind-Value="@selectedCounty" Data="@availableCounties" Placeholder="Megye kiválasztása" Style="width: 300px;" />
+    <RadzenDropDown @bind-Value="@selectedSchool" Data="@availableSchools" Placeholder="Iskola kiválasztása" Style="width: 300px;" />
+    <RadzenDropDown @bind-Value="@selectedSpec" Data="@availableSpecs" Placeholder="Szak kiválasztása" Style="width: 300px;" />
+    <RadzenButton Text="Trend megjelenítése" Click="@LoadTrend" Style="width: 300px;" Icon="trending_up" />
+</div>
+
+@if (trendData.Any())
+{
+    <RadzenChart Style="height: 500px;">
+        <RadzenLineSeries Data="@trendData" CategoryProperty="Year" ValueProperty="Average" Title="Bejutási átlag" />
+        <RadzenCategoryAxis />
+        <RadzenValueAxis />
+    </RadzenChart>
+}
+
+@code {
+    private List<string> availableCounties = new();
+    private List<string> availableSchools = new();
+    private List<string> availableSpecs = new();
+
+    private string selectedCounty;
+    private string selectedSchool;
+    private string selectedSpec;
+
+    private List<TrendPoint> trendData = new();
+
+    protected override void OnInitialized()
+    {
+        var allData = new List<RepartizareModel>();
+
+        foreach (var y in new[] { 2021, 2022, 2023, 2024 })
+            allData.AddRange(CsvService.LoadByYear(y));
+
+        availableCounties = allData.Select(r => r.County).Where(c => !string.IsNullOrWhiteSpace(c)).Distinct().OrderBy(c => c).ToList();
+        availableSchools = allData.Select(r => r.CleanedSchoolName).Where(s => !string.IsNullOrWhiteSpace(s)).Distinct().OrderBy(s => s).ToList();
+        availableSpecs = allData.Select(r => r.CleanedSpecialization).Where(s => !string.IsNullOrWhiteSpace(s)).Distinct().OrderBy(s => s).ToList();
+    }
+
+    private void LoadTrend()
+    {
+        if (!string.IsNullOrEmpty(selectedCounty) &&
+            !string.IsNullOrEmpty(selectedSchool) &&
+            !string.IsNullOrEmpty(selectedSpec))
+        {
+            trendData = CsvService.GetTrendFor(selectedCounty, selectedSchool, selectedSpec);
+        }
+    }
+}

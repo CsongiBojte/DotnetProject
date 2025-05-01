@@ -29,6 +29,46 @@
       "PackagePath": "staticwebassets/data/admitere/repartizare2024.csv"
     },
     {
+      "Id": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2014_final.csv",
+      "PackagePath": "staticwebassets/data/bac/2014_final.csv"
+    },
+    {
+      "Id": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2015_final.csv",
+      "PackagePath": "staticwebassets/data/bac/2015_final.csv"
+    },
+    {
+      "Id": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2016_final.csv",
+      "PackagePath": "staticwebassets/data/bac/2016_final.csv"
+    },
+    {
+      "Id": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2017_final.csv",
+      "PackagePath": "staticwebassets/data/bac/2017_final.csv"
+    },
+    {
+      "Id": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2018_final.csv",
+      "PackagePath": "staticwebassets/data/bac/2018_final.csv"
+    },
+    {
+      "Id": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2019_final.csv",
+      "PackagePath": "staticwebassets/data/bac/2019_final.csv"
+    },
+    {
+      "Id": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2020_final.csv",
+      "PackagePath": "staticwebassets/data/bac/2020_final.csv"
+    },
+    {
+      "Id": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2021_final.csv",
+      "PackagePath": "staticwebassets/data/bac/2021_final.csv"
+    },
+    {
+      "Id": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2022_final.csv",
+      "PackagePath": "staticwebassets/data/bac/2022_final.csv"
+    },
+    {
+      "Id": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2023_final.csv",
+      "PackagePath": "staticwebassets/data/bac/2023_final.csv"
+    },
+    {
       "Id": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/favicon.png",
       "PackagePath": "staticwebassets/favicon.png"
     },

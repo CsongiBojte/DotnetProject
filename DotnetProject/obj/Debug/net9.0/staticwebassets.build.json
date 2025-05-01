@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pCnHoA8CffPkDAjS93LuK88XdesGXDN6zb72p4kLEwI=",
+  "Hash": "3yPPuSev62lQIA2cf3xy3Tqnd+ijy+KB+gXiTp3R6sc=",
   "Source": "DotnetProject",
   "BasePath": "_content/DotnetProject",
   "Mode": "Default",
@@ -941,6 +941,27 @@
       "OriginalItemSpec": "/Users/csongorbojte/.nuget/packages/radzen.blazor/6.6.4/staticwebassets/Radzen.Blazor.min.js"
     },
     {
+      "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/091efdcg8u-055nkkiodn.gz",
+      "SourceId": "DotnetProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DotnetProject",
+      "RelativePath": "data/bac/2021_final#[.{fingerprint=055nkkiodn}]?.csv.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2021_final.csv",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "b5s2k0hp3h",
+      "Integrity": "ASHy28SeHIbvJAkEKwSXoE5elDjSOEjuLIRGAsNnmGA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2021_final.csv"
+    },
+    {
       "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/0ju0xkxgfy-khv3u5hwcm.gz",
       "SourceId": "DotnetProject",
       "SourceType": "Discovered",
@@ -1193,6 +1214,27 @@
       "OriginalItemSpec": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
+      "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/5z2qz39dmf-jh0z2rhz3b.gz",
+      "SourceId": "DotnetProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DotnetProject",
+      "RelativePath": "data/bac/2016_final#[.{fingerprint=jh0z2rhz3b}]?.csv.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2016_final.csv",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "o3u5np7zo4",
+      "Integrity": "pNJ/3BU57Xpy3Xyyc1ADUrreO3ZX+f6iKk0A7H0Y18o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2016_final.csv"
+    },
+    {
       "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/63oc1n27oy-u7yoj9fmh7.gz",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
@@ -1233,6 +1275,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/csongorbojte/.nuget/packages/radzen.blazor/6.6.4/staticwebassets/css/standard-dark.css"
+    },
+    {
+      "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/6lg2f1ffx6-i80wl6ojsb.gz",
+      "SourceId": "DotnetProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DotnetProject",
+      "RelativePath": "data/bac/2019_final#[.{fingerprint=i80wl6ojsb}]?.csv.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2019_final.csv",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "5jjnguxszb",
+      "Integrity": "X+WG6iaM7/6azaZ3FSeZn40UrXswaaoiLaDz3Ae6SkY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2019_final.csv"
     },
     {
       "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/6o9s175gvo-pbze8svcea.gz",
@@ -1676,6 +1739,48 @@
       "OriginalItemSpec": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/admitere/repartizare2022.csv"
     },
     {
+      "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/dmf08xrdwd-3eczp3myv2.gz",
+      "SourceId": "DotnetProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DotnetProject",
+      "RelativePath": "data/bac/2018_final#[.{fingerprint=3eczp3myv2}]?.csv.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2018_final.csv",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "afyimg57f8",
+      "Integrity": "Olv29LCvoaWLZMXFlOoxw8rAeoQ8Aoxkyco8wB5+kzk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2018_final.csv"
+    },
+    {
+      "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/e4vxai9ybg-2fotow9udw.gz",
+      "SourceId": "DotnetProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DotnetProject",
+      "RelativePath": "data/bac/2014_final#[.{fingerprint=2fotow9udw}]?.csv.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2014_final.csv",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "d7hwaf6e45",
+      "Integrity": "GeVAher9TpF8CQzbJtizKVDZ1SwhPR7rGzJlJnYSp9Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2014_final.csv"
+    },
+    {
       "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/e7nbb0ut6a-c2jlpeoesf.gz",
       "SourceId": "DotnetProject",
       "SourceType": "Discovered",
@@ -1991,6 +2096,27 @@
       "OriginalItemSpec": "/Users/csongorbojte/.nuget/packages/radzen.blazor/6.6.4/staticwebassets/css/material3.css"
     },
     {
+      "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/hgatu79zrx-uqjf79c1ix.gz",
+      "SourceId": "DotnetProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DotnetProject",
+      "RelativePath": "data/bac/2015_final#[.{fingerprint=uqjf79c1ix}]?.csv.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2015_final.csv",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "bjtl8exzf0",
+      "Integrity": "x1h03waDQg80EoNe5Mi70bdxqKbMoaLAT4lRUWSkhR4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2015_final.csv"
+    },
+    {
       "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/hhff85vxhh-7hi9hcmkpz.gz",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
@@ -2138,6 +2264,27 @@
       "OriginalItemSpec": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
+      "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/kp1wnb6r3m-8groq15oom.gz",
+      "SourceId": "DotnetProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DotnetProject",
+      "RelativePath": "data/bac/2023_final#[.{fingerprint=8groq15oom}]?.csv.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2023_final.csv",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "arq01jkxr6",
+      "Integrity": "dtQKuXw0N7hRAcIhJfoRoBPXjIH1QY/mPgx9X0BVsds=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2023_final.csv"
+    },
+    {
       "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/kxw6vhs3tw-y7v9cxd14o.gz",
       "SourceId": "DotnetProject",
       "SourceType": "Discovered",
@@ -2241,6 +2388,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/mjpbnwv5xd-0j0nbys54q.gz",
+      "SourceId": "DotnetProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DotnetProject",
+      "RelativePath": "data/bac/2020_final#[.{fingerprint=0j0nbys54q}]?.csv.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2020_final.csv",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "men835z8aq",
+      "Integrity": "gpCkuRrDXb2SPbPYQXaPe3htdKQHv0Gp+zEbti8au7U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2020_final.csv"
     },
     {
       "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/nbs97lc0or-notf2xhcfb.gz",
@@ -2705,6 +2873,27 @@
       "OriginalItemSpec": "/Users/csongorbojte/.nuget/packages/radzen.blazor/6.6.4/staticwebassets/css/standard-dark-base.css"
     },
     {
+      "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/uc5sfdorsu-ihnef5im46.gz",
+      "SourceId": "DotnetProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DotnetProject",
+      "RelativePath": "data/bac/2022_final#[.{fingerprint=ihnef5im46}]?.csv.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2022_final.csv",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "6v5w7bqkqd",
+      "Integrity": "TgeexWfDcSCNFmTQF8K3X/hNJuv5SMEJN038zgNgNeI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2022_final.csv"
+    },
+    {
       "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/uflsupihjl-hm6oq5jsf4.gz",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
@@ -2873,6 +3062,27 @@
       "OriginalItemSpec": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
+      "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/ztj40flr6g-te1ovsis71.gz",
+      "SourceId": "DotnetProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/DotnetProject",
+      "RelativePath": "data/bac/2017_final#[.{fingerprint=te1ovsis71}]?.csv.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2017_final.csv",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "5pbssrosiw",
+      "Integrity": "OZJrmbHHPh5zQiLbgJig5gdyPf2H0IsTT8t4ScXnaJo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2017_final.csv"
+    },
+    {
       "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/scopedcss/bundle/DotnetProject.styles.css",
       "SourceId": "DotnetProject",
       "SourceType": "Computed",
@@ -3039,6 +3249,216 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/data/admitere/repartizare2024.csv"
+    },
+    {
+      "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2014_final.csv",
+      "SourceId": "DotnetProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/",
+      "BasePath": "_content/DotnetProject",
+      "RelativePath": "data/bac/2014_final#[.{fingerprint}]?.csv",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2fotow9udw",
+      "Integrity": "3siQsx/cZtA6XRm3JGrzqOzP7rs5tvc+oePzvz6Kn7A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/data/bac/2014_final.csv"
+    },
+    {
+      "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2015_final.csv",
+      "SourceId": "DotnetProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/",
+      "BasePath": "_content/DotnetProject",
+      "RelativePath": "data/bac/2015_final#[.{fingerprint}]?.csv",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uqjf79c1ix",
+      "Integrity": "SsPoZNoJpQOIOlMiBHFI3iMh1otNUosVO7rXEGYyM4c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/data/bac/2015_final.csv"
+    },
+    {
+      "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2016_final.csv",
+      "SourceId": "DotnetProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/",
+      "BasePath": "_content/DotnetProject",
+      "RelativePath": "data/bac/2016_final#[.{fingerprint}]?.csv",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jh0z2rhz3b",
+      "Integrity": "ybQyStESl8zOdXhDAfzhTA2cMRjG9RtJXdT+zi3jlOg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/data/bac/2016_final.csv"
+    },
+    {
+      "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2017_final.csv",
+      "SourceId": "DotnetProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/",
+      "BasePath": "_content/DotnetProject",
+      "RelativePath": "data/bac/2017_final#[.{fingerprint}]?.csv",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "te1ovsis71",
+      "Integrity": "21ORl+tHrmSWrrLMBfN6bR63zsMtH7DWvXzVPPcVgKE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/data/bac/2017_final.csv"
+    },
+    {
+      "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2018_final.csv",
+      "SourceId": "DotnetProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/",
+      "BasePath": "_content/DotnetProject",
+      "RelativePath": "data/bac/2018_final#[.{fingerprint}]?.csv",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3eczp3myv2",
+      "Integrity": "e67QjCBXUBM3ZxymUIU+RkpgG4rYxS4fCHFzVzwSO8o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/data/bac/2018_final.csv"
+    },
+    {
+      "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2019_final.csv",
+      "SourceId": "DotnetProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/",
+      "BasePath": "_content/DotnetProject",
+      "RelativePath": "data/bac/2019_final#[.{fingerprint}]?.csv",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i80wl6ojsb",
+      "Integrity": "MhbxBw7IuN8xbQNmxzc0bAmDr7dubLjmO5WqYN++0+Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/data/bac/2019_final.csv"
+    },
+    {
+      "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2020_final.csv",
+      "SourceId": "DotnetProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/",
+      "BasePath": "_content/DotnetProject",
+      "RelativePath": "data/bac/2020_final#[.{fingerprint}]?.csv",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0j0nbys54q",
+      "Integrity": "lOpS+gX15j35oxv/AclZcMmvaa0a46UsWANmFICoFWs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/data/bac/2020_final.csv"
+    },
+    {
+      "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2021_final.csv",
+      "SourceId": "DotnetProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/",
+      "BasePath": "_content/DotnetProject",
+      "RelativePath": "data/bac/2021_final#[.{fingerprint}]?.csv",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "055nkkiodn",
+      "Integrity": "xP3jakwUbWJzwcT6/SpPYxHiPQFtc212Ev00sHw9h0s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/data/bac/2021_final.csv"
+    },
+    {
+      "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2022_final.csv",
+      "SourceId": "DotnetProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/",
+      "BasePath": "_content/DotnetProject",
+      "RelativePath": "data/bac/2022_final#[.{fingerprint}]?.csv",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ihnef5im46",
+      "Integrity": "ZrHUSwtOH8IdAqlRR90jOatOeHEXgldXeK56ZVsNsX8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/data/bac/2022_final.csv"
+    },
+    {
+      "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2023_final.csv",
+      "SourceId": "DotnetProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/",
+      "BasePath": "_content/DotnetProject",
+      "RelativePath": "data/bac/2023_final#[.{fingerprint}]?.csv",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8groq15oom",
+      "Integrity": "CBFIaCVQXxmn10eN8l9/c1ETaOY+bRnG4WzvCHLON34=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/data/bac/2023_final.csv"
     },
     {
       "Identity": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/favicon.png",
@@ -13380,6 +13800,2986 @@
         {
           "Name": "integrity",
           "Value": "sha256-Uq6lE1w9zfkk+5c7CwRQmzc6n0lPI3/WYr8HUXbRQ/Y="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2014_final.2fotow9udw.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/e4vxai9ybg-2fotow9udw.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000234496"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4264472"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GeVAher9TpF8CQzbJtizKVDZ1SwhPR7rGzJlJnYSp9Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"3siQsx/cZtA6XRm3JGrzqOzP7rs5tvc+oePzvz6Kn7A=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2fotow9udw"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2014_final.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3siQsx/cZtA6XRm3JGrzqOzP7rs5tvc+oePzvz6Kn7A="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2014_final.2fotow9udw.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2014_final.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57482565"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3siQsx/cZtA6XRm3JGrzqOzP7rs5tvc+oePzvz6Kn7A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2fotow9udw"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2014_final.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3siQsx/cZtA6XRm3JGrzqOzP7rs5tvc+oePzvz6Kn7A="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2014_final.2fotow9udw.csv.gz",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/e4vxai9ybg-2fotow9udw.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4264472"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GeVAher9TpF8CQzbJtizKVDZ1SwhPR7rGzJlJnYSp9Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2fotow9udw"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2014_final.csv.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GeVAher9TpF8CQzbJtizKVDZ1SwhPR7rGzJlJnYSp9Y="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2014_final.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/e4vxai9ybg-2fotow9udw.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000234496"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4264472"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GeVAher9TpF8CQzbJtizKVDZ1SwhPR7rGzJlJnYSp9Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"3siQsx/cZtA6XRm3JGrzqOzP7rs5tvc+oePzvz6Kn7A=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3siQsx/cZtA6XRm3JGrzqOzP7rs5tvc+oePzvz6Kn7A="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2014_final.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2014_final.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57482565"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3siQsx/cZtA6XRm3JGrzqOzP7rs5tvc+oePzvz6Kn7A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3siQsx/cZtA6XRm3JGrzqOzP7rs5tvc+oePzvz6Kn7A="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2014_final.csv.gz",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/e4vxai9ybg-2fotow9udw.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4264472"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GeVAher9TpF8CQzbJtizKVDZ1SwhPR7rGzJlJnYSp9Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GeVAher9TpF8CQzbJtizKVDZ1SwhPR7rGzJlJnYSp9Y="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2015_final.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/hgatu79zrx-uqjf79c1ix.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000279918"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3572470"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x1h03waDQg80EoNe5Mi70bdxqKbMoaLAT4lRUWSkhR4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"SsPoZNoJpQOIOlMiBHFI3iMh1otNUosVO7rXEGYyM4c=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SsPoZNoJpQOIOlMiBHFI3iMh1otNUosVO7rXEGYyM4c="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2015_final.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2015_final.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47320782"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SsPoZNoJpQOIOlMiBHFI3iMh1otNUosVO7rXEGYyM4c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SsPoZNoJpQOIOlMiBHFI3iMh1otNUosVO7rXEGYyM4c="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2015_final.csv.gz",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/hgatu79zrx-uqjf79c1ix.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3572470"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x1h03waDQg80EoNe5Mi70bdxqKbMoaLAT4lRUWSkhR4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-x1h03waDQg80EoNe5Mi70bdxqKbMoaLAT4lRUWSkhR4="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2015_final.uqjf79c1ix.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/hgatu79zrx-uqjf79c1ix.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000279918"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3572470"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x1h03waDQg80EoNe5Mi70bdxqKbMoaLAT4lRUWSkhR4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"SsPoZNoJpQOIOlMiBHFI3iMh1otNUosVO7rXEGYyM4c=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uqjf79c1ix"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2015_final.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SsPoZNoJpQOIOlMiBHFI3iMh1otNUosVO7rXEGYyM4c="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2015_final.uqjf79c1ix.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2015_final.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47320782"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SsPoZNoJpQOIOlMiBHFI3iMh1otNUosVO7rXEGYyM4c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uqjf79c1ix"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2015_final.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SsPoZNoJpQOIOlMiBHFI3iMh1otNUosVO7rXEGYyM4c="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2015_final.uqjf79c1ix.csv.gz",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/hgatu79zrx-uqjf79c1ix.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3572470"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x1h03waDQg80EoNe5Mi70bdxqKbMoaLAT4lRUWSkhR4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uqjf79c1ix"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2015_final.csv.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-x1h03waDQg80EoNe5Mi70bdxqKbMoaLAT4lRUWSkhR4="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2016_final.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/5z2qz39dmf-jh0z2rhz3b.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000267288"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3741279"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pNJ/3BU57Xpy3Xyyc1ADUrreO3ZX+f6iKk0A7H0Y18o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ybQyStESl8zOdXhDAfzhTA2cMRjG9RtJXdT+zi3jlOg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ybQyStESl8zOdXhDAfzhTA2cMRjG9RtJXdT+zi3jlOg="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2016_final.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2016_final.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49207584"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ybQyStESl8zOdXhDAfzhTA2cMRjG9RtJXdT+zi3jlOg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ybQyStESl8zOdXhDAfzhTA2cMRjG9RtJXdT+zi3jlOg="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2016_final.csv.gz",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/5z2qz39dmf-jh0z2rhz3b.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3741279"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pNJ/3BU57Xpy3Xyyc1ADUrreO3ZX+f6iKk0A7H0Y18o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pNJ/3BU57Xpy3Xyyc1ADUrreO3ZX+f6iKk0A7H0Y18o="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2016_final.jh0z2rhz3b.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/5z2qz39dmf-jh0z2rhz3b.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000267288"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3741279"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pNJ/3BU57Xpy3Xyyc1ADUrreO3ZX+f6iKk0A7H0Y18o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ybQyStESl8zOdXhDAfzhTA2cMRjG9RtJXdT+zi3jlOg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jh0z2rhz3b"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2016_final.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ybQyStESl8zOdXhDAfzhTA2cMRjG9RtJXdT+zi3jlOg="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2016_final.jh0z2rhz3b.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2016_final.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49207584"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ybQyStESl8zOdXhDAfzhTA2cMRjG9RtJXdT+zi3jlOg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jh0z2rhz3b"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2016_final.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ybQyStESl8zOdXhDAfzhTA2cMRjG9RtJXdT+zi3jlOg="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2016_final.jh0z2rhz3b.csv.gz",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/5z2qz39dmf-jh0z2rhz3b.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3741279"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pNJ/3BU57Xpy3Xyyc1ADUrreO3ZX+f6iKk0A7H0Y18o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jh0z2rhz3b"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2016_final.csv.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pNJ/3BU57Xpy3Xyyc1ADUrreO3ZX+f6iKk0A7H0Y18o="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2017_final.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/ztj40flr6g-te1ovsis71.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000269832"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3706007"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OZJrmbHHPh5zQiLbgJig5gdyPf2H0IsTT8t4ScXnaJo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"21ORl+tHrmSWrrLMBfN6bR63zsMtH7DWvXzVPPcVgKE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-21ORl+tHrmSWrrLMBfN6bR63zsMtH7DWvXzVPPcVgKE="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2017_final.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2017_final.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48689477"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"21ORl+tHrmSWrrLMBfN6bR63zsMtH7DWvXzVPPcVgKE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-21ORl+tHrmSWrrLMBfN6bR63zsMtH7DWvXzVPPcVgKE="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2017_final.csv.gz",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/ztj40flr6g-te1ovsis71.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3706007"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OZJrmbHHPh5zQiLbgJig5gdyPf2H0IsTT8t4ScXnaJo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OZJrmbHHPh5zQiLbgJig5gdyPf2H0IsTT8t4ScXnaJo="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2017_final.te1ovsis71.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/ztj40flr6g-te1ovsis71.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000269832"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3706007"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OZJrmbHHPh5zQiLbgJig5gdyPf2H0IsTT8t4ScXnaJo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"21ORl+tHrmSWrrLMBfN6bR63zsMtH7DWvXzVPPcVgKE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "te1ovsis71"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2017_final.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-21ORl+tHrmSWrrLMBfN6bR63zsMtH7DWvXzVPPcVgKE="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2017_final.te1ovsis71.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2017_final.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48689477"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"21ORl+tHrmSWrrLMBfN6bR63zsMtH7DWvXzVPPcVgKE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "te1ovsis71"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2017_final.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-21ORl+tHrmSWrrLMBfN6bR63zsMtH7DWvXzVPPcVgKE="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2017_final.te1ovsis71.csv.gz",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/ztj40flr6g-te1ovsis71.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3706007"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OZJrmbHHPh5zQiLbgJig5gdyPf2H0IsTT8t4ScXnaJo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "te1ovsis71"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2017_final.csv.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OZJrmbHHPh5zQiLbgJig5gdyPf2H0IsTT8t4ScXnaJo="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2018_final.3eczp3myv2.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/dmf08xrdwd-3eczp3myv2.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000272461"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3670247"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Olv29LCvoaWLZMXFlOoxw8rAeoQ8Aoxkyco8wB5+kzk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"e67QjCBXUBM3ZxymUIU+RkpgG4rYxS4fCHFzVzwSO8o=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3eczp3myv2"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2018_final.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-e67QjCBXUBM3ZxymUIU+RkpgG4rYxS4fCHFzVzwSO8o="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2018_final.3eczp3myv2.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2018_final.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49319172"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e67QjCBXUBM3ZxymUIU+RkpgG4rYxS4fCHFzVzwSO8o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3eczp3myv2"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2018_final.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-e67QjCBXUBM3ZxymUIU+RkpgG4rYxS4fCHFzVzwSO8o="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2018_final.3eczp3myv2.csv.gz",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/dmf08xrdwd-3eczp3myv2.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3670247"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Olv29LCvoaWLZMXFlOoxw8rAeoQ8Aoxkyco8wB5+kzk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3eczp3myv2"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2018_final.csv.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Olv29LCvoaWLZMXFlOoxw8rAeoQ8Aoxkyco8wB5+kzk="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2018_final.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/dmf08xrdwd-3eczp3myv2.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000272461"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3670247"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Olv29LCvoaWLZMXFlOoxw8rAeoQ8Aoxkyco8wB5+kzk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"e67QjCBXUBM3ZxymUIU+RkpgG4rYxS4fCHFzVzwSO8o=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-e67QjCBXUBM3ZxymUIU+RkpgG4rYxS4fCHFzVzwSO8o="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2018_final.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2018_final.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49319172"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e67QjCBXUBM3ZxymUIU+RkpgG4rYxS4fCHFzVzwSO8o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-e67QjCBXUBM3ZxymUIU+RkpgG4rYxS4fCHFzVzwSO8o="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2018_final.csv.gz",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/dmf08xrdwd-3eczp3myv2.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3670247"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Olv29LCvoaWLZMXFlOoxw8rAeoQ8Aoxkyco8wB5+kzk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Olv29LCvoaWLZMXFlOoxw8rAeoQ8Aoxkyco8wB5+kzk="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2019_final.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/6lg2f1ffx6-i80wl6ojsb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000270320"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3699323"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"X+WG6iaM7/6azaZ3FSeZn40UrXswaaoiLaDz3Ae6SkY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"MhbxBw7IuN8xbQNmxzc0bAmDr7dubLjmO5WqYN++0+Q=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MhbxBw7IuN8xbQNmxzc0bAmDr7dubLjmO5WqYN++0+Q="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2019_final.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2019_final.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49316523"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MhbxBw7IuN8xbQNmxzc0bAmDr7dubLjmO5WqYN++0+Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MhbxBw7IuN8xbQNmxzc0bAmDr7dubLjmO5WqYN++0+Q="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2019_final.csv.gz",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/6lg2f1ffx6-i80wl6ojsb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3699323"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"X+WG6iaM7/6azaZ3FSeZn40UrXswaaoiLaDz3Ae6SkY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-X+WG6iaM7/6azaZ3FSeZn40UrXswaaoiLaDz3Ae6SkY="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2019_final.i80wl6ojsb.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/6lg2f1ffx6-i80wl6ojsb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000270320"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3699323"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"X+WG6iaM7/6azaZ3FSeZn40UrXswaaoiLaDz3Ae6SkY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"MhbxBw7IuN8xbQNmxzc0bAmDr7dubLjmO5WqYN++0+Q=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i80wl6ojsb"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2019_final.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MhbxBw7IuN8xbQNmxzc0bAmDr7dubLjmO5WqYN++0+Q="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2019_final.i80wl6ojsb.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2019_final.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49316523"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MhbxBw7IuN8xbQNmxzc0bAmDr7dubLjmO5WqYN++0+Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i80wl6ojsb"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2019_final.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MhbxBw7IuN8xbQNmxzc0bAmDr7dubLjmO5WqYN++0+Q="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2019_final.i80wl6ojsb.csv.gz",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/6lg2f1ffx6-i80wl6ojsb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3699323"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"X+WG6iaM7/6azaZ3FSeZn40UrXswaaoiLaDz3Ae6SkY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i80wl6ojsb"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2019_final.csv.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-X+WG6iaM7/6azaZ3FSeZn40UrXswaaoiLaDz3Ae6SkY="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2020_final.0j0nbys54q.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/mjpbnwv5xd-0j0nbys54q.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000246325"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4059683"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gpCkuRrDXb2SPbPYQXaPe3htdKQHv0Gp+zEbti8au7U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"lOpS+gX15j35oxv/AclZcMmvaa0a46UsWANmFICoFWs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0j0nbys54q"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2020_final.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lOpS+gX15j35oxv/AclZcMmvaa0a46UsWANmFICoFWs="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2020_final.0j0nbys54q.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2020_final.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56754342"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lOpS+gX15j35oxv/AclZcMmvaa0a46UsWANmFICoFWs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0j0nbys54q"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2020_final.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lOpS+gX15j35oxv/AclZcMmvaa0a46UsWANmFICoFWs="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2020_final.0j0nbys54q.csv.gz",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/mjpbnwv5xd-0j0nbys54q.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4059683"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gpCkuRrDXb2SPbPYQXaPe3htdKQHv0Gp+zEbti8au7U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0j0nbys54q"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2020_final.csv.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gpCkuRrDXb2SPbPYQXaPe3htdKQHv0Gp+zEbti8au7U="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2020_final.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/mjpbnwv5xd-0j0nbys54q.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000246325"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4059683"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gpCkuRrDXb2SPbPYQXaPe3htdKQHv0Gp+zEbti8au7U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"lOpS+gX15j35oxv/AclZcMmvaa0a46UsWANmFICoFWs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lOpS+gX15j35oxv/AclZcMmvaa0a46UsWANmFICoFWs="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2020_final.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2020_final.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56754342"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lOpS+gX15j35oxv/AclZcMmvaa0a46UsWANmFICoFWs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lOpS+gX15j35oxv/AclZcMmvaa0a46UsWANmFICoFWs="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2020_final.csv.gz",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/mjpbnwv5xd-0j0nbys54q.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4059683"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gpCkuRrDXb2SPbPYQXaPe3htdKQHv0Gp+zEbti8au7U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Jun 2023 10:28:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gpCkuRrDXb2SPbPYQXaPe3htdKQHv0Gp+zEbti8au7U="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2021_final.055nkkiodn.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/091efdcg8u-055nkkiodn.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000313828"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3186458"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ASHy28SeHIbvJAkEKwSXoE5elDjSOEjuLIRGAsNnmGA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 Jun 2023 09:36:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"xP3jakwUbWJzwcT6/SpPYxHiPQFtc212Ev00sHw9h0s=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "055nkkiodn"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2021_final.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xP3jakwUbWJzwcT6/SpPYxHiPQFtc212Ev00sHw9h0s="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2021_final.055nkkiodn.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2021_final.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45421305"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xP3jakwUbWJzwcT6/SpPYxHiPQFtc212Ev00sHw9h0s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 Jun 2023 09:36:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "055nkkiodn"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2021_final.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xP3jakwUbWJzwcT6/SpPYxHiPQFtc212Ev00sHw9h0s="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2021_final.055nkkiodn.csv.gz",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/091efdcg8u-055nkkiodn.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3186458"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ASHy28SeHIbvJAkEKwSXoE5elDjSOEjuLIRGAsNnmGA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 Jun 2023 09:36:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "055nkkiodn"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2021_final.csv.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ASHy28SeHIbvJAkEKwSXoE5elDjSOEjuLIRGAsNnmGA="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2021_final.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/091efdcg8u-055nkkiodn.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000313828"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3186458"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ASHy28SeHIbvJAkEKwSXoE5elDjSOEjuLIRGAsNnmGA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 Jun 2023 09:36:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"xP3jakwUbWJzwcT6/SpPYxHiPQFtc212Ev00sHw9h0s=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xP3jakwUbWJzwcT6/SpPYxHiPQFtc212Ev00sHw9h0s="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2021_final.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2021_final.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45421305"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xP3jakwUbWJzwcT6/SpPYxHiPQFtc212Ev00sHw9h0s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 Jun 2023 09:36:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xP3jakwUbWJzwcT6/SpPYxHiPQFtc212Ev00sHw9h0s="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2021_final.csv.gz",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/091efdcg8u-055nkkiodn.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3186458"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ASHy28SeHIbvJAkEKwSXoE5elDjSOEjuLIRGAsNnmGA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 Jun 2023 09:36:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ASHy28SeHIbvJAkEKwSXoE5elDjSOEjuLIRGAsNnmGA="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2022_final.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/uc5sfdorsu-ihnef5im46.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000310460"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3221026"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TgeexWfDcSCNFmTQF8K3X/hNJuv5SMEJN038zgNgNeI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 Jun 2023 09:36:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ZrHUSwtOH8IdAqlRR90jOatOeHEXgldXeK56ZVsNsX8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZrHUSwtOH8IdAqlRR90jOatOeHEXgldXeK56ZVsNsX8="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2022_final.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2022_final.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "43171570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZrHUSwtOH8IdAqlRR90jOatOeHEXgldXeK56ZVsNsX8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 Jun 2023 09:36:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZrHUSwtOH8IdAqlRR90jOatOeHEXgldXeK56ZVsNsX8="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2022_final.csv.gz",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/uc5sfdorsu-ihnef5im46.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3221026"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TgeexWfDcSCNFmTQF8K3X/hNJuv5SMEJN038zgNgNeI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 Jun 2023 09:36:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TgeexWfDcSCNFmTQF8K3X/hNJuv5SMEJN038zgNgNeI="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2022_final.ihnef5im46.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/uc5sfdorsu-ihnef5im46.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000310460"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3221026"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TgeexWfDcSCNFmTQF8K3X/hNJuv5SMEJN038zgNgNeI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 Jun 2023 09:36:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ZrHUSwtOH8IdAqlRR90jOatOeHEXgldXeK56ZVsNsX8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ihnef5im46"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2022_final.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZrHUSwtOH8IdAqlRR90jOatOeHEXgldXeK56ZVsNsX8="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2022_final.ihnef5im46.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2022_final.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "43171570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZrHUSwtOH8IdAqlRR90jOatOeHEXgldXeK56ZVsNsX8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 Jun 2023 09:36:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ihnef5im46"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2022_final.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZrHUSwtOH8IdAqlRR90jOatOeHEXgldXeK56ZVsNsX8="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2022_final.ihnef5im46.csv.gz",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/uc5sfdorsu-ihnef5im46.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3221026"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TgeexWfDcSCNFmTQF8K3X/hNJuv5SMEJN038zgNgNeI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 Jun 2023 09:36:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ihnef5im46"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2022_final.csv.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TgeexWfDcSCNFmTQF8K3X/hNJuv5SMEJN038zgNgNeI="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2023_final.8groq15oom.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/kp1wnb6r3m-8groq15oom.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000321841"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3107120"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dtQKuXw0N7hRAcIhJfoRoBPXjIH1QY/mPgx9X0BVsds=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Jul 2023 10:12:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"CBFIaCVQXxmn10eN8l9/c1ETaOY+bRnG4WzvCHLON34=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8groq15oom"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2023_final.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CBFIaCVQXxmn10eN8l9/c1ETaOY+bRnG4WzvCHLON34="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2023_final.8groq15oom.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2023_final.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45511403"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CBFIaCVQXxmn10eN8l9/c1ETaOY+bRnG4WzvCHLON34=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Jul 2023 10:12:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8groq15oom"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2023_final.csv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CBFIaCVQXxmn10eN8l9/c1ETaOY+bRnG4WzvCHLON34="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2023_final.8groq15oom.csv.gz",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/kp1wnb6r3m-8groq15oom.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3107120"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dtQKuXw0N7hRAcIhJfoRoBPXjIH1QY/mPgx9X0BVsds=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Jul 2023 10:12:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8groq15oom"
+        },
+        {
+          "Name": "label",
+          "Value": "data/bac/2023_final.csv.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dtQKuXw0N7hRAcIhJfoRoBPXjIH1QY/mPgx9X0BVsds="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2023_final.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/kp1wnb6r3m-8groq15oom.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000321841"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3107120"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dtQKuXw0N7hRAcIhJfoRoBPXjIH1QY/mPgx9X0BVsds=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Jul 2023 10:12:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"CBFIaCVQXxmn10eN8l9/c1ETaOY+bRnG4WzvCHLON34=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CBFIaCVQXxmn10eN8l9/c1ETaOY+bRnG4WzvCHLON34="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2023_final.csv",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/wwwroot/data/bac/2023_final.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45511403"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CBFIaCVQXxmn10eN8l9/c1ETaOY+bRnG4WzvCHLON34=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Jul 2023 10:12:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CBFIaCVQXxmn10eN8l9/c1ETaOY+bRnG4WzvCHLON34="
+        }
+      ]
+    },
+    {
+      "Route": "data/bac/2023_final.csv.gz",
+      "AssetFile": "/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/obj/Debug/net9.0/compressed/kp1wnb6r3m-8groq15oom.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3107120"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dtQKuXw0N7hRAcIhJfoRoBPXjIH1QY/mPgx9X0BVsds=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Jul 2023 10:12:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dtQKuXw0N7hRAcIhJfoRoBPXjIH1QY/mPgx9X0BVsds="
         }
       ]
     },

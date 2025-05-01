@@ -40,8 +40,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/Components/Pages/Kereses.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9LZXJlc2VzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/Components/Pages/Repartizare.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9SZXBhcnRpemFyZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/Components/Pages/Trend.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9UcmVuZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/csongorbojte/Desktop/Egyetem/dotNET/DotnetProject/DotnetProject/Components/Pages/Viz.razor]
