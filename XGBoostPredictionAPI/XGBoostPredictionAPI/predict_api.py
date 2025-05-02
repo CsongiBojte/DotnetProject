@@ -8,10 +8,10 @@ app = Flask(__name__)
 
 # Load booster model
 model = xgb.XGBRegressor()
-model.load_model("xgb_model.json")  # native format
+model.load_model("xgb_model.json")
 
 # Load encoder and features
-encoder, feature_columns = joblib.load("encoder_and_features.pkl")  # adjust if separate file
+encoder, feature_columns = joblib.load("encoder_and_features.pkl")
 
 # Aggregated admission data
 df_last = pd.read_csv("aggregated_last_admissions.csv")
