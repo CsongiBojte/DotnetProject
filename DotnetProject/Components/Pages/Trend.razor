@@ -4,45 +4,149 @@
 @inject CsvReaderService CsvService
 @inject HttpClient Http
 
-<h3>Utolsó bejutási átlag predikciója szakonként (megye → iskola → szak)</h3>
+<div class="container p-4">
+    <h3 class="mb-4 text-primary">
+        <i class="rz-icon-trending-up mr-2"></i>
+        Utolsó bejutási átlag predikciója szakonként
+    </h3>
 
-<div class="flex flex-col gap-3 mb-4">
-    <RadzenDropDown @bind-Value="@selectedCounty" Data="@availableCounties" 
-                    Placeholder="Megye kiválasztása" Style="width: 300px;" 
-                    Change="@OnCountyChanged" />
-    
-    <RadzenDropDown @bind-Value="@selectedSchool" Data="@filteredSchools" 
-                    Placeholder="Iskola kiválasztása" Style="width: 300px;" 
-                    Change="@OnSchoolChanged" />
+    <div class="card p-4 mb-4 shadow">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="selection-container mb-4">
+                    <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.H5">Válasszon egy megyét, iskolát és szakot:</RadzenText>
 
-    <RadzenDropDown @bind-Value="@selectedSpec" Data="@filteredSpecs" 
-                    Placeholder="Szak kiválasztása" Style="width: 300px;" />
+                    <RadzenDropDown Class="w-100 mb-3"
+                                    @bind-Value="@selectedCounty"
+                                    Data="@availableCounties"
+                                    Placeholder="Megye kiválasztása"
+                                    Change="@OnCountyChanged"
+                                    AllowFiltering="true" />
 
-    @if (!string.IsNullOrEmpty(selectedSpec))
+                    <RadzenDropDown Class="w-100 mb-3"
+                                    @bind-Value="@selectedSchool"
+                                    Data="@filteredSchools"
+                                    Placeholder="Iskola kiválasztása"
+                                    Change="@OnSchoolChanged"
+                                    AllowFiltering="true"
+                                    Disabled="@(string.IsNullOrEmpty(selectedCounty))" />
+
+                    <RadzenDropDown Class="w-100 mb-3"
+                                    @bind-Value="@selectedSpec"
+                                    Data="@filteredSpecs"
+                                    Placeholder="Szak kiválasztása"
+                                    AllowFiltering="true"
+                                    Disabled="@(string.IsNullOrEmpty(selectedSchool))" />
+                </div>
+
+                <RadzenButton Click="@(() => Predict())"
+                              Text="2025-ös predikció lekérése"
+                              ButtonStyle="ButtonStyle.Primary"
+                              Shade="Shade.Darker"
+                              Icon="trending_up"
+                              Class="w-100"
+                              Disabled="@(string.IsNullOrEmpty(selectedSpec))" />
+            </div>
+
+            <div class="col-md-6">
+                @if (predictionValue.HasValue)
+                {
+                    <div class="prediction-container text-center p-4 rounded shadow h-100">
+                        <RadzenText TextStyle="TextStyle.H5" TagName="TagName.H4" Class="mb-4">
+                            <i class="rz-icon-brightness-auto mr-2"></i>Predikció
+                        </RadzenText>
+
+                        <RadzenCard Class="prediction-card">
+                            <div class="text-center">
+                                <RadzenText TextStyle="TextStyle.Subtitle1">Utolsó bejutási átlag 2025-ben:</RadzenText>
+                                <RadzenText TextStyle="TextStyle.H4" Class="prediction-value text-primary">
+                                    @($"{predictionValue:F2}")
+                                </RadzenText>
+                            </div>
+                        </RadzenCard>
+
+                        @if (trendPoints.Count > 1)
+                        {
+                            <div class="mt-3">
+                                <RadzenText TextStyle="TextStyle.Caption">
+                                    @GetTrendText()
+                                </RadzenText>
+                            </div>
+                        }
+                    </div>
+                }
+                else
+                {
+                    <div class="text-center p-4 rounded shadow h-100 d-flex align-items-center justify-content-center">
+                        <div>
+                            <i class="rz-icon-trending-up" style="font-size: 3rem; color: #ddd;"></i>
+                            <RadzenText TextStyle="TextStyle.Body1" Class="text-muted mt-3">
+                                Válasszon ki egy szakot és kattintson a predikcióra a jövő évi felvételi átlag megtekintéséhez
+                            </RadzenText>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    @if (trendPoints.Any())
     {
-        <RadzenButton Text="2025-ös predikció" Click="@(() => Predict())" 
-                      Style="width: 300px;" Icon="trending_up" />
+        <div class="card p-4 shadow">
+            <RadzenText TextStyle="TextStyle.H6" TagName="TagName.H5" Class="mb-4">
+                <i class="rz-icon-timeline mr-2"></i>Előző évek utolsó bejutási átlagai
+            </RadzenText>
+
+            <RadzenChart Style="height: 400px;">
+                <RadzenLineSeries
+                    Data="@trendPoints"
+                    CategoryProperty="YearString"
+                    ValueProperty="LastMadm"
+                    Title="Utolsó bejutási átlag"
+                    LineType="LineType.Solid"
+                    Stroke="#1976d2"
+                    StrokeWidth="3">
+                    <RadzenMarkers MarkerType="MarkerType.Circle" Size="8" />
+                </RadzenLineSeries>
+
+                @if (predictionValue.HasValue)
+                {
+                    <RadzenLineSeries
+                        Data="@(new[] { trendPoints.LastOrDefault() })"
+                        CategoryProperty="YearString"
+                        ValueProperty="LastMadm"
+                        Title="2025 Predikció"
+                        Stroke="#ff6d00"
+                        StrokeWidth="0">
+                        <RadzenMarkers MarkerType="MarkerType.Diamond" Size="12" Fill="#ff6d00" Stroke="#ff6d00" StrokeWidth="2" />
+                    </RadzenLineSeries>
+                }
+
+                <RadzenCategoryAxis Padding="20" />
+                <RadzenValueAxis Min="Math.Max(0, GetMinValue() - 0.5)" Max="Math.Min(10, GetMaxValue() + 0.5)" Step="0.5">
+                    <RadzenGridLines Visible="true" />
+                    <RadzenAxisTitle Text="Utolsó bejutási átlag" />
+                </RadzenValueAxis>
+
+                <RadzenLegend Position="LegendPosition.Bottom" />
+
+                <RadzenChartTooltipOptions Visible="true" />
+            </RadzenChart>
+        </div>
     }
 </div>
 
-@if (predictionValue != null)
-{
-    <h4>📊 Várható utolsó bejutási átlag 2025-ben: <b>@($"{predictionValue:F2}")</b></h4>
-}
+<style>
+    .prediction-value {
+        font-weight: bold;
+        font-size: 2rem;
+    }
 
-@if (trendPoints.Any())
-{
-    <h5 class="mt-4">📈 Előző évek utolsó bejutási átlagai</h5>
-    <RadzenChart Style="height: 400px;">
-        <RadzenLineSeries 
-            Data="@trendPoints" 
-            CategoryProperty="YearString" 
-            ValueProperty="LastMadm" 
-            Title="Utolsó bejutási átlag" />
-        <RadzenCategoryAxis />
-        <RadzenValueAxis Min="0" Max="10" Step="1" />
-    </RadzenChart>
-}
+    .prediction-card {
+        background-color: #f8f9fa;
+        border-left: 5px solid #1976d2;
+    }
+</style>
 
 @code {
     private List<string> availableCounties = new();
@@ -51,7 +155,7 @@
 
     private List<string> filteredSchools = new();
     private List<string> filteredSpecs = new();
-    
+
     private List<TrendPoint> trendPoints = new();
 
     private string selectedCounty;
@@ -60,11 +164,14 @@
 
     private double? predictionValue = null;
 
+    private List<TrendPoint> realDataPoints = new();
+    private TrendPoint predictedPoint;
+
     private List<RepartizareModel> allData = new();
 
     protected override void OnInitialized()
     {
-        allData = CsvService.LoadByYear(2024); // Use 2024 to get known values
+        allData = CsvService.LoadByYear(2024);
 
         availableCounties = allData
             .Select(r => r.County)
@@ -93,6 +200,7 @@
         selectedSchool = null;
         selectedSpec = null;
         predictionValue = null;
+        trendPoints.Clear();
 
         filteredSchools = allData
             .Where(r => r.County == (string)value)
@@ -107,6 +215,7 @@
     {
         selectedSpec = null;
         predictionValue = null;
+        trendPoints.Clear();
 
         filteredSpecs = allData
             .Where(r => r.CleanedSchoolName == (string)value)
@@ -120,6 +229,7 @@
     private async Task Predict()
     {
         predictionValue = null;
+        trendPoints.Clear();
         var currentYear = DateTime.Now.Year;
 
         var match = allData.FirstOrDefault(r =>
@@ -141,7 +251,7 @@
 
         try
         {
-            var response = await Http.PostAsJsonAsync("http://localhost:5000/predict", requestPayload);
+            var response = await Http.PostAsJsonAsync("http://127.0.0.1:5000/predict", requestPayload);
 
             var responseText = await response.Content.ReadAsStringAsync();
             Console.WriteLine("🔁 Raw response: " + responseText);
@@ -165,14 +275,16 @@
             Console.WriteLine("❌ Error calling prediction API: " + ex.Message);
         }
     }
-    
+
     private async Task LoadTrend()
     {
         trendPoints.Clear();
+        realDataPoints.Clear();
+        predictedPoint = null;
 
         var currentYear = DateTime.Now.Year;
 
-        for (int year = 2020; year < currentYear; year++)
+        for (int year = 2021; year <= 2024; year++)
         {
             var yearlyData = CsvService.LoadByYear(year);
 
@@ -184,30 +296,54 @@
 
             if (filtered.Any())
             {
-                trendPoints.Add(new TrendPoint
+                var point = new TrendPoint
                 {
                     Year = year,
-                    LastMadm = filtered.Min() // always the lowest admitted
-                });
+                    YearString = year.ToString(),
+                    LastMadm = filtered.Min()
+                };
+
+                realDataPoints.Add(point);
+                trendPoints.Add(point);
             }
         }
-        
+
         if (predictionValue.HasValue)
         {
-            trendPoints.Add(new TrendPoint
+            predictedPoint = new TrendPoint
             {
-                Year = DateTime.Now.Year,
+                Year = 2025,
+                YearString = "2025",
                 LastMadm = predictionValue.Value
-            });
+            };
+
+            trendPoints.Add(predictedPoint);
         }
-        
-        Console.WriteLine("📈 TrendPoints count: " + trendPoints.Count);
-        foreach (var tp in trendPoints)
-        {
-            Console.WriteLine($" - {tp.Year}: {tp.LastMadm}");
-        }
-        
+
         StateHasChanged();
     }
 
+    private double GetMinValue()
+    {
+        return trendPoints.Any() ? trendPoints.Min(p => p.LastMadm) : 0;
+    }
+
+    private double GetMaxValue()
+    {
+        return trendPoints.Any() ? trendPoints.Max(p => p.LastMadm) : 10;
+    }
+
+    private string GetTrendText()
+    {
+        if (trendPoints.Count < 2) return "";
+
+        var lastRealPoint = trendPoints[trendPoints.Count - 2];
+        var predictedPoint = trendPoints.Last();
+
+        double difference = predictedPoint.LastMadm - lastRealPoint.LastMadm;
+        string trend = difference > 0 ? "emelkedés" : "csökkenés";
+        double percentChange = Math.Abs(difference / lastRealPoint.LastMadm * 100);
+
+        return $"{Math.Abs(difference):F2} ponttal {trend} ({percentChange:F1}%) a 2024-es átlaghoz képest";
+    }
 }
