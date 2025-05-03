@@ -1,14 +1,153 @@
 ﻿@page "/"
+@inject NavigationManager Navigation
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Felvételi Információs Rendszer</PageTitle>
 
-<h1>Hello, world!</h1>
+<div class="container-fluid">
+    <!-- Hero Section -->
+    <div class="hero-section text-center py-5">
+        <h1 class="display-4 mb-4">Felvételi Információs Rendszer</h1>
+        <p class="lead mb-4">Keresse meg eredményét, vizsgázókat és elemezze a felvételi trendeket</p>
+        <RadzenButton Icon="search" Text="Keresés indítása" ButtonStyle="ButtonStyle.Primary" Size="ButtonSize.Large" Click="@(() => Navigation.NavigateTo("/kereses"))" />
+    </div>
 
-<RadzenButton Click="@ButtonClicked" Text="Hi"></RadzenButton>
-@code {
-    void ButtonClicked()
-    {
-        // Handle the Click event of RadzenButton
-        Console.WriteLine("Button clicked!");
+    <div class="container py-5">
+        <!-- Features Cards -->
+        <div class="row mb-5">
+            <div class="col-md-4 mb-4">
+                <RadzenCard Class="h-100 feature-card" Style="text-align: center; padding: 30px;">
+                    <RadzenIcon Icon="search" IconStyle="IconStyle.Primary" Style="font-size: 48px;" />
+                    <h3 class="mt-3 mb-3">Tanulói Keresés</h3>
+                    <p class="text-muted mb-4">Keresse meg saját eredményét a tanulói kód alapján</p>
+                    <RadzenButton Text="Keresés" Click="@(() => Navigation.NavigateTo("/kereses"))" ButtonStyle="ButtonStyle.Light" />
+                </RadzenCard>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <RadzenCard Class="h-100 feature-card" Style="text-align: center; padding: 30px;">
+                    <RadzenIcon Icon="trending_up" IconStyle="IconStyle.Primary" Style="font-size: 48px;" />
+                    <h3 class="mt-3 mb-3">Predikciók</h3>
+                    <p class="text-muted mb-4">Jósolja meg a felvételi átlagok alakulását 2025-re</p>
+                    <RadzenButton Text="Predikció" Click="@(() => Navigation.NavigateTo("/trend"))" ButtonStyle="ButtonStyle.Light" />
+                </RadzenCard>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <RadzenCard Class="h-100 feature-card" Style="text-align: center; padding: 30px;">
+                    <RadzenIcon Icon="bar_chart" IconStyle="IconStyle.Primary" Style="font-size: 48px;" />
+                    <h3 class="mt-3 mb-3">Statisztikák</h3>
+                    <p class="text-muted mb-4">Tekintse meg a top szakokat bejutási átlag szerint</p>
+                    <RadzenButton Text="Statisztikák" Click="@(() => Navigation.NavigateTo("/viz"))" ButtonStyle="ButtonStyle.Light" />
+                </RadzenCard>
+            </div>
+        </div>
+
+        <!-- Statistics Section -->
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center mb-4">Gyors statisztikák</h2>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <RadzenCard Class="text-center stat-card">
+                    <h3 class="stat-number">9.04</h3>
+                    <p class="text-muted">Legmagasabb átlag (2024)</p>
+                    <small class="text-muted">Teor.real spec.germană</small>
+                </RadzenCard>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <RadzenCard Class="text-center stat-card">
+                    <h3 class="stat-number">6.61</h3>
+                    <p class="text-muted">Top 10 átlag</p>
+                    <small class="text-muted">2024-es adatok alapján</small>
+                </RadzenCard>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <RadzenCard Class="text-center stat-card">
+                    <h3 class="stat-number">5.19</h3>
+                    <p class="text-muted">Legalacsonyabb (Top 10)</p>
+                    <small class="text-muted">Economic szak</small>
+                </RadzenCard>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <RadzenCard Class="text-center stat-card">
+                    <h3 class="stat-number">3.85</h3>
+                    <p class="text-muted">Különbség</p>
+                    <small class="text-muted">1. és 10. hely között</small>
+                </RadzenCard>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2 class="text-center mb-4">Gyakori kérdések</h2>
+            </div>
+            <div class="col-md-6 mb-3">
+                <RadzenCard>
+                    <h5>Hogyan kereshetek rá az eredményemre?</h5>
+                    <p class="text-muted mb-0">A "Keresés" menüpontban adja meg a tanulói kódját a keresőmezőben. A rendszer azonnal megjeleníti eredményeit.</p>
+                </RadzenCard>
+            </div>
+            <div class="col-md-6 mb-3">
+                <RadzenCard>
+                    <h5>Milyen adatok érhetők el?</h5>
+                    <p class="text-muted mb-0">Az alkalmazás a 2021-2024 közötti felvételi eredményeket tartalmazza, valamint előrejelzést készít 2025-re.</p>
+                </RadzenCard>
+            </div>
+            <div class="col-md-6 mb-3">
+                <RadzenCard>
+                    <h5>Hogyan működik a predikció?</h5>
+                    <p class="text-muted mb-0">A rendszer az előző évek adatai alapján gépi tanulási modellekkel prognosztizálja a következő év bejutási átlagait.</p>
+                </RadzenCard>
+            </div>
+            <div class="col-md-6 mb-3">
+                <RadzenCard>
+                    <h5>Frissül az adatbázis?</h5>
+                    <p class="text-muted mb-0">Az adatbázis évente frissül az új felvételi eredményekkel, így mindig a legaktuálisabb információkat kapja.</p>
+                </RadzenCard>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .hero-section {
+        background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+        color: white;
+        padding: 60px 0;
+        margin-bottom: 40px;
     }
+
+    .feature-card {
+        transition: transform 0.2s ease-in-out;
+        border: none;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .stat-card {
+        padding: 20px;
+        border: none;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #1976d2;
+        margin-bottom: 10px;
+    }
+
+    .lead {
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+</style>
+
+@code {
+    // Navigation methods are handled inline
 }

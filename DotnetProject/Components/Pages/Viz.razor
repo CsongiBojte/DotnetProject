@@ -3,22 +3,172 @@
 
 @using DotnetProject.Services
 
-<h3>Top 10 szakátlag (Bejutási átlag szerint)</h3>
+<div class="container p-4">
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <RadzenText TextStyle="TextStyle.H4" TagName="TagName.H3" Class="mb-4 text-primary">
+                <i class="rz-icon-school mr-2"></i>Top 10 szak bejutási átlag szerint (2024)
+            </RadzenText>
 
-<RadzenChart Style="height: 500px;">
-    <RadzenColumnSeries Data="@specializationData"
-                        CategoryProperty="Specialization"
-                        ValueProperty="Average"
-                        Title="Bejutási átlag" />
-    <RadzenCategoryAxis/>
-    <RadzenValueAxis />
-</RadzenChart>
+            @if (specializationData.Any())
+            {
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <RadzenText TextStyle="TextStyle.Body1" Class="text-muted">
+                            A legnagyobb átlagot igénylő szakok az ország felsőoktatási intézményeiben.
+                        </RadzenText>
+                    </div>
+                </div>
+
+                <RadzenChart Style="height: 600px;" Class="mb-4">
+                    <RadzenColumnSeries Data="@specializationData"
+                                        CategoryProperty="Specialization"
+                                        ValueProperty="Average"
+                                        Title="Bejutási átlag"
+                                        Fill="#1976d2">
+                        <RadzenSeriesDataLabels Visible="true" />
+                    </RadzenColumnSeries>
+
+                    <RadzenCategoryAxis Padding="20">
+                        <RadzenAxisTitle Text="Szak" />
+                    </RadzenCategoryAxis>
+                    <RadzenValueAxis Min="5" Max="10" Step="0.5" FormatString="{0:F2}">
+                        <RadzenGridLines Visible="true" />
+                        <RadzenAxisTitle Text="Bejutási átlag" />
+                    </RadzenValueAxis>
+
+                    <RadzenLegend Visible="false" />
+                    <RadzenChartTooltipOptions Visible="true" />
+                </RadzenChart>
+
+                <h4 class="mt-4 mb-3">
+                    <i class="rz-icon-analytics mr-2"></i>Statisztikák
+                </h4>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <RadzenCard Class="mb-3">
+                            <div class="text-center">
+                                <small class="text-muted d-block mb-1">Legmagasabb átlag</small>
+                                <h5 class="mb-1">@($"{specializationData.First().Average:F2}")</h5>
+                                <small class="text-muted">@specializationData.First().Specialization</small>
+                            </div>
+                        </RadzenCard>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <RadzenCard Class="mb-3">
+                            <div class="text-center">
+                                <small class="text-muted d-block mb-1">Top 10 átlag</small>
+                                <h5 class="mb-1">@($"{specializationData.Take(10).Average(s => s.Average):F2}")</h5>
+                                <small class="text-muted">@specializationData.Count szakból</small>
+                            </div>
+                        </RadzenCard>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <RadzenCard Class="mb-3">
+                            <div class="text-center">
+                                <small class="text-muted d-block mb-1">Legalacsonyabb (Top 10-ben)</small>
+                                <h5 class="mb-1">@($"{specializationData.Take(10).Min(s => s.Average):F2}")</h5>
+                                <small class="text-muted">@specializationData.Take(10).Last().Specialization</small>
+                            </div>
+                        </RadzenCard>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <RadzenCard Class="mb-3">
+                            <div class="text-center">
+                                <small class="text-muted d-block mb-1">Különbség (1. - 10.)</small>
+                                <h5 class="mb-1">@($"{(specializationData.First().Average - specializationData.Skip(9).First().Average):F2}")</h5>
+                                <small class="text-muted">pont</small>
+                            </div>
+                        </RadzenCard>
+                    </div>
+                </div>
+
+                <h4 class="mt-4 mb-3">
+                    <i class="rz-icon-list mr-2"></i>Részletes lista
+                </h4>
+
+                <RadzenDataGrid Data="@specializationData.Take(10)"
+                                TItem="SpecializationStats"
+                                AllowFiltering="false"
+                                AllowSorting="false"
+                                AllowPaging="false"
+                                GridLines="DataGridGridLines.Both">
+                    <Columns>
+                        <RadzenDataGridColumn TItem="SpecializationStats" Property="@nameof(SpecializationStats.Rank)" Title="#" Width="50px" />
+                        <RadzenDataGridColumn TItem="SpecializationStats" Property="@nameof(SpecializationStats.Specialization)" Title="Szak" Width="400px" />
+                        <RadzenDataGridColumn TItem="SpecializationStats" Property="@nameof(SpecializationStats.Average)" Title="Bejutási átlag" FormatString="{0:F2}" Width="150px" TextAlign="TextAlign.Center" />
+                        <RadzenDataGridColumn TItem="SpecializationStats" Property="@nameof(SpecializationStats.Count)" Title="Iskola db." Width="100px" TextAlign="TextAlign.Center" />
+                    </Columns>
+                </RadzenDataGrid>
+            }
+            else
+            {
+                <div class="text-center p-4">
+                    <RadzenText TextStyle="TextStyle.Body1" Class="text-muted">
+                        Nincs elérhető adat. Ellenőrizze az adatforrást.
+                    </RadzenText>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<style>
+    .rz-data-grid .rz-data-grid-column-content {
+        padding: 8px 12px;
+    }
+
+    .rz-chart-column-series rect {
+        transition: fill 0.3s ease;
+    }
+
+    .rz-chart-column-series rect:hover {
+        fill: #1565c0 !important;
+        cursor: pointer;
+    }
+
+    .rz-chart .rz-chart-axis-label {
+        font-size: 11px;
+    }
+
+    .rz-chart .rz-chart-axis-title {
+        font-weight: 500;
+    }
+
+    /* Ensure bars are properly spaced and visible */
+    .rz-chart .rz-chart-plot {
+        overflow: visible;
+    }
+
+    .rz-chart .rz-chart-series {
+        margin: 0;
+    }
+</style>
 
 @code {
     private List<SpecializationStats> specializationData = new();
 
     protected override void OnInitialized()
     {
-        specializationData = CsvService.GetAverageBySpecialization(2024);
+        var allData = CsvService.GetAverageBySpecialization(2024);
+        specializationData = allData
+            .OrderByDescending(s => s.Average)
+            .Take(10)
+            .Select((s, index) => new SpecializationStats
+            {
+                Rank = index + 1,
+                Specialization = TruncateText(s.Specialization, 30),
+                Average = s.Average,
+                Count = 1 // This should be the count of schools offering this specialization
+            })
+            .ToList();
+    }
+
+    private string TruncateText(string text, int maxLength)
+    {
+        if (string.IsNullOrEmpty(text) || text.Length <= maxLength)
+            return text;
+
+        return text.Substring(0, maxLength) + "...";
     }
 }

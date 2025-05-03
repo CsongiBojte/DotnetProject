@@ -3,37 +3,254 @@
 @using DotnetProject.Services
 @inject HighSchoolResultsService ResultsService
 
-<h3>Keresés kód alapján</h3>
+<div class="container p-4">
+    <div class="card shadow">
+        <div class="card-body">
+            <h3 class="mb-4 text-primary">
+                <i class="rz-icon-search mr-2"></i>Keresés tanulói kód alapján
+            </h3>
 
-<RadzenTextBox @bind-Value="searchCode" Placeholder="Tanulói kód..." Style="width: 300px;" />
-<RadzenButton Text="Keresés" Click="@Search" Icon="search" Style="margin-left: 10px;" />
+            <div class="d-flex align-items-center mb-4">
+                <RadzenTextBox @bind-Value="searchCode"
+                               Placeholder="Írja be a tanulói kódot..."
+                               Style="width: 400px;"
+                               @oninput="@((e) => OnInputChanged(e))"
+                               @onkeydown="@HandleKeyPress" />
+                <RadzenButton Text="Keresés"
+                              Click="@Search"
+                              Icon="search"
+                              ButtonStyle="ButtonStyle.Primary"
+                              IsBusy="@isLoading"
+                              Style="margin-left: 10px;"
+                              Disabled="@(string.IsNullOrWhiteSpace(searchCode))" />
+            </div>
 
-@if (result != null)
-{
-    <RadzenCard Style="margin-top: 20px;">
-        <p><b>Kód:</b> @result.Code</p>
-        <p><b>Iskola:</b> @result.FullSchoolName</p>
-        <p><b>Megye:</b> @result.County</p>
-        <p><b>Szak:</b> @result.Specialization</p>
-        <p><b>Átlag:</b> @result.Average</p>
-        <p><b>Román jegy:</b> @result.RomanianGradeInitial</p>
-        <p><b>Kötelező tantárgy jegy:</b> @result.MandatoryGradeInitial</p>
-        <p><b>Választott tantárgy jegy:</b> @result.ChosenGradeInitial</p>
-    </RadzenCard>
-}
-else if (searched)
-{
-    <RadzenAlert Severity="AlertSeverity.Warning" Style="margin-top: 20px;">Nem található ilyen kód.</RadzenAlert>
-}
+            @if (isLoading)
+            {
+                <div class="text-center p-4">
+                    <RadzenProgressBarCircular ProgressBarStyle="ProgressBarStyle.Light" />
+                    <RadzenText TextStyle="TextStyle.Body1" Class="mt-2">Keresés folyamatban...</RadzenText>
+                </div>
+            }
+            else if (result != null)
+            {
+                <RadzenCard Class="result-card">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 class="text-primary mb-3">
+                                <i class="rz-icon-person mr-2"></i>Tanuló adatai
+                            </h5>
+                            <table class="table table-borderless">
+                                <tr>
+                                    <td class="label-column"><b>Kód:</b></td>
+                                    <td>@result.Code</td>
+                                </tr>
+                                <tr>
+                                    <td class="label-column"><b>Átlag:</b></td>
+                                    <td>
+                                        <span class="average-value @GetAverageClass(result.Average)">
+                                            @result.Average
+                                        </span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="text-primary mb-3">
+                                <i class="rz-icon-school mr-2"></i>Iskola adatai
+                            </h5>
+                            <table class="table table-borderless">
+                                <tr>
+                                    <td class="label-column"><b>Iskola:</b></td>
+                                    <td>@result.FullSchoolName</td>
+                                </tr>
+                                <tr>
+                                    <td class="label-column"><b>Megye:</b></td>
+                                    <td>@result.County</td>
+                                </tr>
+                                <tr>
+                                    <td class="label-column"><b>Szak:</b></td>
+                                    <td>@result.Specialization</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <hr class="my-4" />
+
+                    <h5 class="text-primary mb-3">
+                        <i class="rz-icon-assessment mr-2"></i>Vizsga eredmények
+                    </h5>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <table class="table table-borderless">
+                                <tr>
+                                    <td class="label-column"><b>Román nyelv:</b></td>
+                                    <td><span class="grade-value @GetGradeClass(result.RomanianGradeInitial.ToString())">@result.RomanianGradeInitial.ToString()</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-md-4">
+                            <table class="table table-borderless">
+                                <tr>
+                                    <td class="label-column"><b>Kötelező tantárgy:</b></td>
+                                    <td><span class="grade-value @GetGradeClass(result.MandatoryGradeInitial.ToString())">@result.MandatoryGradeInitial.ToString()</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-md-4">
+                            <table class="table table-borderless">
+                                <tr>
+                                    <td class="label-column"><b>Választott tantárgy:</b></td>
+                                    <td><span class="grade-value @GetGradeClass(result.ChosenGradeInitial.ToString())">@result.ChosenGradeInitial.ToString()</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </RadzenCard>
+            }
+            else if (searched && !isLoading)
+            {
+                <RadzenAlert Severity="AlertSeverity.Warning"
+                             CloseButton="false"
+                             Style="margin-top: 20px;">
+                    <strong>Nem található!</strong> A keresett tanulói kód nem szerepel az adatbázisban.
+                </RadzenAlert>
+            }
+
+            @if (string.IsNullOrWhiteSpace(searchCode))
+            {
+                <div class="text-center p-4 search-help">
+                    <RadzenText TextStyle="TextStyle.Body1" Class="text-muted">
+                        A tanulói kód általában a tanuló egyedi azonosítója. Kérjük, ellenőrizze a kód helyességét.
+                    </RadzenText>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<style>
+    .result-card {
+        background-color: #f8f9fa;
+        border: 1px solid #e9ecef;
+        border-radius: 8px;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .label-column {
+        width: 150px;
+        padding-right: 10px;
+    }
+
+    .table {
+        margin-bottom: 0;
+    }
+
+    .average-value, .grade-value {
+        font-weight: bold;
+        padding: 2px 8px;
+        border-radius: 4px;
+    }
+
+    .average-high {
+        background-color: #d4edda;
+        color: #155724;
+    }
+
+    .average-medium {
+        background-color: #fff3cd;
+        color: #856404;
+    }
+
+    .average-low {
+        background-color: #f8d7da;
+        color: #721c24;
+    }
+
+    .grade-high {
+        background-color: #d4edda;
+        color: #155724;
+    }
+
+    .grade-medium {
+        background-color: #fff3cd;
+        color: #856404;
+    }
+
+    .grade-low {
+        background-color: #f8d7da;
+        color: #721c24;
+    }
+
+    .search-help {
+        background-color: #e9ecef;
+        border-radius: 8px;
+        margin-top: 20px;
+    }
+</style>
 
 @code {
     private string searchCode;
     private StudentResult result;
     private bool searched = false;
+    private bool isLoading = false;
 
-    private void Search()
+    private async Task Search()
     {
+        if (string.IsNullOrWhiteSpace(searchCode))
+            return;
+
+        isLoading = true;
         searched = true;
-        result = ResultsService.SearchByCode(searchCode?.Trim());
+        result = null;
+
+        try
+        {
+            // Simulate a small delay for better UX
+            await Task.Delay(300);
+            result = ResultsService.SearchByCode(searchCode.Trim());
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void OnInputChanged(ChangeEventArgs e)
+    {
+        searchCode = e?.Value?.ToString();
+        if (string.IsNullOrWhiteSpace(searchCode))
+        {
+            searched = false;
+            result = null;
+        }
+    }
+
+    private async Task HandleKeyPress(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter" && !string.IsNullOrWhiteSpace(searchCode))
+        {
+            await Search();
+        }
+    }
+
+    private string GetAverageClass(double average)
+    {
+        if (average >= 9.0) return "average-high";
+        if (average >= 7.0) return "average-medium";
+        return "average-low";
+    }
+
+    private string GetGradeClass(string grade)
+    {
+        if (double.TryParse(grade, out double gradeValue))
+        {
+            if (gradeValue >= 9.0) return "grade-high";
+            if (gradeValue >= 7.0) return "grade-medium";
+            return "grade-low";
+        }
+        return "";
     }
 }

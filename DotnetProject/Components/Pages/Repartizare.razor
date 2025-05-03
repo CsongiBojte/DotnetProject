@@ -3,41 +3,187 @@
 
 @using DotnetProject.Services
 
-<h3>Bejutási eredmények @selectedYear</h3>
+<div class="container p-4">
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <RadzenText TextStyle="TextStyle.H3" TagName="TagName.H3" Class="mb-0 text-primary">
+                    <i class="rz-icon-school mr-2"></i>Bejutási eredmények @selectedYear
+                </RadzenText>
 
-<RadzenDropDown TValue="int" Data="@availableYears"
-                @bind-Value="@selectedYear"
-                Change="@OnYearChange"
-                Style="width: 200px; margin-bottom: 20px;" />
+                <div class="d-flex gap-3 align-items-center">
+                    <RadzenLabel Text="Év:" Style="margin-right: 5px;" />
+                    <RadzenDropDown TValue="int" Data="@availableYears"
+                                    TextProperty="DisplayName"
+                                    ValueProperty="Year"
+                                    @bind-Value="@selectedYear"
+                                    Change="@OnYearChange"
+                                    Style="width: 150px;" />
+                </div>
+            </div>
 
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <RadzenText TextStyle="TextStyle.Body1" Class="text-muted">
+                        A @selectedYear. évi felvételi eredmények, bejutási átlagok és iskolarangsorok egy helyen.
+                    </RadzenText>
+                </div>
+            </div>
 
-<RadzenDataGrid Data="@records" TItem="RepartizareModel" PageSize="10"
-                AllowPaging="true" AllowSorting="true" AllowFiltering="true"
-                ShowPagingSummary="true" Groupable="true"
-                ShowGroups="true">
-    <Columns>
-        <RadzenDataGridColumn TItem="RepartizareModel" Property="County" Groupable="true" Title="Megye" />
-        <RadzenDataGridColumn TItem="RepartizareModel" Property="AdmissionAverage" Title="Bejutási átlag" />
-        <RadzenDataGridColumn TItem="RepartizareModel" Title="Iskola" Groupable="true">
-            <Template Context="data">
-                @((MarkupString)data.HighSchoolHtml)
-            </Template>
-        </RadzenDataGridColumn>
-        <RadzenDataGridColumn TItem="RepartizareModel" Title="Szak" Groupable="true">
-            <Template Context="data">
-                @((MarkupString)data.SpecializationHtml)
-            </Template>
-        </RadzenDataGridColumn>
-    </Columns>
-</RadzenDataGrid>
+            @if (records.Any())
+            {
+                <div class="statistics-row mb-4">
+                    <RadzenCard Class="stat-card">
+                        <div class="text-center">
+                            <small class="text-muted d-block mb-1">Összes bejegyzés</small>
+                            <h5 class="mb-0">@records.Count</h5>
+                        </div>
+                    </RadzenCard>
+                    <RadzenCard Class="stat-card">
+                        <div class="text-center">
+                            <small class="text-muted d-block mb-1">Legmagasabb átlag</small>
+                            <h5 class="mb-0">@GetMaxAverage()</h5>
+                        </div>
+                    </RadzenCard>
+                    <RadzenCard Class="stat-card">
+                        <div class="text-center">
+                            <small class="text-muted d-block mb-1">Legalacsonyabb átlag</small>
+                            <h5 class="mb-0">@GetMinAverage()</h5>
+                        </div>
+                    </RadzenCard>
+                    <RadzenCard Class="stat-card">
+                        <div class="text-center">
+                            <small class="text-muted d-block mb-1">Megyék száma</small>
+                            <h5 class="mb-0">@records.Select(r => r.County).Distinct().Count()</h5>
+                        </div>
+                    </RadzenCard>
+                </div>
+
+                <RadzenDataGrid Data="@records" TItem="RepartizareModel" PageSize="20"
+                                AllowPaging="true" AllowSorting="true" AllowFiltering="true"
+                                ShowPagingSummary="true" Groupable="true" Density="Density.Compact"
+                                Style="border-radius: 8px; overflow: hidden;"
+                                EmptyText="Nincs adat.">
+                    <GroupHeaderTemplate>
+                        @context.GroupDescriptor.GetTitle(): @(context.Data.Key ?? "")
+                    </GroupHeaderTemplate>
+                    <Columns>
+                        <RadzenDataGridColumn TItem="RepartizareModel" Property="County" Filterable="true" Sortable="true"
+                                              Title="Megye" Width="150px">
+                            <HeaderTemplate>
+                                <i class="rz-icon-location-on mr-1"></i>Megye
+                            </HeaderTemplate>
+                        </RadzenDataGridColumn>
+
+                        <RadzenDataGridColumn TItem="RepartizareModel" Property="AdmissionAverage" Filterable="true" Sortable="true"
+                                              Title="Bejutási átlag" Width="150px" FormatString="{0:F2}" TextAlign="TextAlign.Center">
+                            <HeaderTemplate>
+                                <i class="rz-icon-trending-up mr-1"></i>Bejutási átlag
+                            </HeaderTemplate>
+                        </RadzenDataGridColumn>
+
+                        <RadzenDataGridColumn TItem="RepartizareModel" Property="CleanedSchoolName" Title="Iskola" Width="300px"
+                                              Filterable="true" Sortable="true">
+                            <HeaderTemplate>
+                                <i class="rz-icon-account-balance mr-1"></i>Iskola
+                            </HeaderTemplate>
+                            <Template Context="data">
+                                @if (!string.IsNullOrEmpty(data.HighSchoolHtml))
+                                {
+                                    @((MarkupString)data.HighSchoolHtml)
+                                }
+                                else if (!string.IsNullOrEmpty(data.CleanedSchoolName))
+                                {
+                                    @data.CleanedSchoolName
+                                }
+                                else
+                                {
+                                    <span class="text-muted">---</span>
+                                }
+                            </Template>
+                        </RadzenDataGridColumn>
+
+                        <RadzenDataGridColumn TItem="RepartizareModel" Property="CleanedSpecialization" Title="Szak" Width="300px"
+                                              Filterable="true" Sortable="true">
+                            <HeaderTemplate>
+                                <i class="rz-icon-class mr-1"></i>Szak
+                            </HeaderTemplate>
+                            <Template Context="data">
+                                @if (!string.IsNullOrEmpty(data.SpecializationHtml))
+                                {
+                                    @((MarkupString)data.SpecializationHtml)
+                                }
+                                else if (!string.IsNullOrEmpty(data.CleanedSpecialization))
+                                {
+                                    @data.CleanedSpecialization
+                                }
+                                else
+                                {
+                                    <span class="text-muted">---</span>
+                                }
+                            </Template>
+                        </RadzenDataGridColumn>
+                    </Columns>
+                </RadzenDataGrid>
+            }
+            else
+            {
+                <div class="text-center p-4">
+                    <i class="rz-icon-info-outline" style="font-size: 3rem; color: #ddd;"></i>
+                    <RadzenText TextStyle="TextStyle.Body1" Class="text-muted mt-3">
+                        Nincs elérhető adat a @selectedYear. évre. Próbáljon meg másik évet választani.
+                    </RadzenText>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<style>
+    .statistics-row {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .stat-card {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    .rz-data-grid .rz-data-grid-column-content {
+        padding: 8px 12px;
+    }
+
+    .rz-data-grid .rz-data-grid-header-cell {
+        font-weight: 600;
+    }
+
+    .rz-icon-trending-up, .rz-icon-location-on, .rz-icon-account-balance, .rz-icon-class {
+        color: #1976d2;
+    }
+</style>
 
 @code {
     private List<RepartizareModel> records = new();
-    private List<int> availableYears = new() { 2020,2021, 2022, 2023, 2024 };
+    private List<YearOption> availableYears = new();
     private int selectedYear = 2024;
+
+    private class YearOption
+    {
+        public int Year { get; set; }
+        public string DisplayName => Year.ToString();
+    }
 
     protected override void OnInitialized()
     {
+        // Initialize year options
+        availableYears = new List<YearOption>();
+        for (int year = 2020; year <= 2024; year++)
+        {
+            availableYears.Add(new YearOption { Year = year });
+        }
+
         LoadDataForYear(selectedYear);
     }
 
@@ -53,5 +199,54 @@
     private void LoadDataForYear(int year)
     {
         records = CsvService.LoadByYear(year);
+    }
+
+    private string GetMaxAverage()
+    {
+        var validAverages = records
+            .Where(r => double.TryParse(r.AdmissionAverage, out _))
+            .Select(r => double.Parse(r.AdmissionAverage))
+            .ToList();
+
+        return validAverages.Any() ? validAverages.Max().ToString("F2") : "---";
+    }
+
+    private string GetMinAverage()
+    {
+        var validAverages = records
+            .Where(r => double.TryParse(r.AdmissionAverage, out _))
+            .Select(r => double.Parse(r.AdmissionAverage))
+            .ToList();
+
+        return validAverages.Any() ? validAverages.Min().ToString("F2") : "---";
+    }
+
+    private void ExportToCSV()
+    {
+        var csvContent = new System.Text.StringBuilder();
+        csvContent.AppendLine("Megye,Iskola,Szak,Bejutási átlag");
+
+        foreach (var record in records)
+        {
+            var row = $"{EscapeCSV(record.County)},{EscapeCSV(record.CleanedSchoolName)},{EscapeCSV(record.CleanedSpecialization)},{record.AdmissionAverage}";
+            csvContent.AppendLine(row);
+        }
+
+        var fileName = $"repartizare_{selectedYear}.csv";
+        // You would need to implement the actual download functionality here
+        // This could involve JavaScript interop or a download button
+    }
+
+    private string EscapeCSV(string field)
+    {
+        if (field == null) return "";
+
+        field = field.Replace("\"", "\"\"");
+        if (field.Contains(",") || field.Contains("\"") || field.Contains("\n"))
+        {
+            field = $"\"{field}\"";
+        }
+
+        return field;
     }
 }

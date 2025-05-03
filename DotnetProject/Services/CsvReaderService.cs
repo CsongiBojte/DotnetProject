@@ -8,6 +8,7 @@ using CsvHelper.Configuration;
 
 public class SpecializationStats
 {
+    public int Rank { get; set; }  
     public string Specialization { get; set; }
     public double Average { get; set; }
     public int Count { get; set; }
